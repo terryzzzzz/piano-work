@@ -1,0 +1,15 @@
+h1, h2, h3, h4, h5, h6, a, p, input, textarea, span, b, li, ul {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.font-museo {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700 !important;
+}
+
+a, p, input, textarea, span, li, ul {
+  font-weight: 300 !important;
+}

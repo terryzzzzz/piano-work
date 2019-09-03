@@ -6,8 +6,12 @@
 
 {% block body %}
 
-<div class="text-red-600">
-  <h2>Hello World!</h2>
-</div>
+<!-- ORGANISMS : Header -->
+{% include('_partials/_organisms/_header.twig') with {
+} %}
+
+<!-- SECTIONS : Hero -->
+{% include('singles/home/_hero') with {
+} %}
 
 {% endblock %}

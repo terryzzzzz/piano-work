@@ -603,6 +603,159 @@ video {
   height: auto;
 }
 
+/* Translate Y -50% */
+
+.tf_tlY_-50 {
+  transform: translateY(-50%);
+}
+
+/* Translate X -50% */
+
+.tf_tlX_-50 {
+  transform: translateX(-50%);
+}
+
+/* Transform Origin Center */
+
+.tf_origin_center {
+  transform-origin: center;
+}
+
+/* Rotate 45deg */
+
+.tf_rt_45 {
+  transform: rotate(45deg);
+}
+
+/* Rotate 90deg */
+
+.tf_rt_90 {
+  transform: rotate(90deg);
+}
+
+/* Rotate 180deg */
+
+.tf_rt_180 {
+  transform: rotate(180deg);
+}
+
+.group:hover .group-hover\:tf_rt_180 {
+  transform: rotate(180deg);
+}
+
+/* Transition */
+
+/* Default */
+
+.trans {
+  transition-duration: .25s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+/* Duration */
+
+.trans-slower      { transition-duration: .75s;
+}
+
+.trans-slow        { transition-duration: .5s;
+}
+
+.trans-fast        { transition-duration: .15s;
+}
+
+.trans-faster      { transition-duration: .075s;
+}
+
+/* Properties */
+
+.trans-all         { transition-property: all;
+}
+
+.trans-none        { transition-property: none;
+}
+
+.trans-bg          { transition-property: background;
+}
+
+.trans-opacity     { transition-property: opacity;
+}
+
+.trans-color       { transition-property: color;
+}
+
+.trans-shadow      { transition-property: box-shadow;
+}
+
+/* Timing Function */
+
+.trans-linear      { transition-timing-function: linear;
+}
+
+.trans-ease        { transition-timing-function: ease;
+}
+
+.trans-ease-in     { transition-timing-function: ease-in;
+}
+
+.trans-ease-out    { transition-timing-function: ease-out;
+}
+
+.trans-ease-in-out { transition-timing-function: ease-in-out;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: Museo;
+
+  font-weight: 100;
+
+  src: url(/fonts/Ubuntu-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Museo;
+
+  font-weight: 300;
+
+  src: url(/fonts/Ubuntu-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Museo;
+
+  font-weight: 500;
+
+  src: url(/fonts/Ubuntu-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Museo;
+
+  font-weight: 700;
+
+  src: url(/fonts/Ubuntu-Bold.woff2) format("woff2");
+}
+
+/* Type Face */
+
+h1, h2, h3, h4, h5, h6, a, p, input, textarea, span, b, li, ul {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.font-museo {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700 !important;
+}
+
+a, p, input, textarea, span, li, ul {
+  font-weight: 300 !important;
+}
+
 .container {
   width: 100%;
 }
