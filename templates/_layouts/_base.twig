@@ -1,0 +1,21 @@
+{% set docTitle = docTitle is defined ? docTitle : title|striptags %}
+{% set metaDescription = metaDescription is defined ? metaDescription : 'Template Meta Description Here' %}
+<!doctype html>
+<html lang="{{ currentSite.language }}">
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{{ docTitle }}</title>
+        <meta name="description" content="{{ metaDescription }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <link href="{{ craft.app.request.absoluteUrl ~ 'css/main.css' }}" rel="stylesheet">
+
+    {% endblock %}
+</head>
+<body>
+    {% block body %}{% endblock %}
+</body>
