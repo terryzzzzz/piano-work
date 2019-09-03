@@ -707,7 +707,7 @@ video {
 /* Fonts */
 
 @font-face {
-  font-family: Museo;
+  font-family: Ubuntu;
 
   font-weight: 100;
 
@@ -715,7 +715,7 @@ video {
 }
 
 @font-face {
-  font-family: Museo;
+  font-family: Ubuntu;
 
   font-weight: 300;
 
@@ -723,7 +723,7 @@ video {
 }
 
 @font-face {
-  font-family: Museo;
+  font-family: Ubuntu;
 
   font-weight: 500;
 
@@ -731,7 +731,7 @@ video {
 }
 
 @font-face {
-  font-family: Museo;
+  font-family: Ubuntu;
 
   font-weight: 700;
 
@@ -744,7 +744,7 @@ h1, h2, h3, h4, h5, h6, a, p, input, textarea, span, b, li, ul {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.font-museo {
+.font-ubuntu {
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -753,7 +753,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a, p, input, textarea, span, li, ul {
-  font-weight: 300 !important;
+  font-weight: 100 !important;
 }
 
 .container {

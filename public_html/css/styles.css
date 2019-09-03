@@ -54,22 +54,22 @@
 
 /* Fonts */
 @font-face {
-  font-family: Museo;
+  font-family: Ubuntu;
   font-weight: 100;
   src: url(/fonts/Ubuntu-Light.woff2) format("woff2");
 }
 @font-face {
-  font-family: Museo;
+  font-family: Ubuntu;
   font-weight: 300;
   src: url(/fonts/Ubuntu-Medium.woff2) format("woff2");
 }
 @font-face {
-  font-family: Museo;
+  font-family: Ubuntu;
   font-weight: 500;
   src: url(/fonts/Ubuntu-Regular.woff2) format("woff2");
 }
 @font-face {
-  font-family: Museo;
+  font-family: Ubuntu;
   font-weight: 700;
   src: url(/fonts/Ubuntu-Bold.woff2) format("woff2");
 }
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6, a, p, input, textarea, span, b, li, ul {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.font-museo {
+.font-ubuntu {
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a, p, input, textarea, span, li, ul {
-  font-weight: 300 !important;
+  font-weight: 100 !important;
 }
 
 @tailwind components;
