@@ -55,13 +55,16 @@ module.exports = {
         '9/10-screen': '90vh',
       },
       textColor: {
-        'gray-primary': '#6b6b6b',
+        'gray-primary': '#1f1f1f',
         'gray-secondary': '#989898',
         'yellow-primary': '#ffd700',
       },
       backgroundColor: {
-        'gray-primary': '#6b6b6b',
+        'gray-primary': '#1f1f1f',
         'yellow-primary': '#ffd700',
+      },
+      borderColor: {
+        'gray-primary': '#1f1f1f',
       },
       colors: {
         red: {

@@ -8,6 +8,10 @@
 .tf_tlX_-50 {
   transform: translateX(-50%);
 }
+/* Translate All -50% */
+.tf_tlAll_-50 {
+  transform: translateX(-50%) translateY(-50%);
+}
 /* Transform Origin Center */
 .tf_origin_center {
   transform-origin: center;

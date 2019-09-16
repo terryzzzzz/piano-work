@@ -615,6 +615,12 @@ video {
   transform: translateX(-50%);
 }
 
+/* Translate All -50% */
+
+.tf_tlAll_-50 {
+  transform: translateX(-50%) translateY(-50%);
+}
+
 /* Transform Origin Center */
 
 .tf_origin_center {
@@ -1227,7 +1233,7 @@ a, p, input, textarea, span, li, ul {
 }
 
 .bg-gray-primary {
-  background-color: #6b6b6b;
+  background-color: #1f1f1f;
 }
 
 .bg-yellow-primary {
@@ -1607,7 +1613,7 @@ a, p, input, textarea, span, li, ul {
 }
 
 .hover\:bg-gray-primary:hover {
-  background-color: #6b6b6b;
+  background-color: #1f1f1f;
 }
 
 .hover\:bg-yellow-primary:hover {
@@ -1987,7 +1993,7 @@ a, p, input, textarea, span, li, ul {
 }
 
 .focus\:bg-gray-primary:focus {
-  background-color: #6b6b6b;
+  background-color: #1f1f1f;
 }
 
 .focus\:bg-yellow-primary:focus {
@@ -2367,7 +2373,7 @@ a, p, input, textarea, span, li, ul {
 }
 
 .active\:bg-gray-primary:active {
-  background-color: #6b6b6b;
+  background-color: #1f1f1f;
 }
 
 .active\:bg-yellow-primary:active {
@@ -2747,7 +2753,7 @@ a, p, input, textarea, span, li, ul {
 }
 
 .group:hover .group-hover\:bg-gray-primary {
-  background-color: #6b6b6b;
+  background-color: #1f1f1f;
 }
 
 .group:hover .group-hover\:bg-yellow-primary {
@@ -3242,6 +3248,10 @@ a, p, input, textarea, span, li, ul {
   border-color: #702459;
 }
 
+.border-gray-primary {
+  border-color: #1f1f1f;
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -3614,6 +3624,10 @@ a, p, input, textarea, span, li, ul {
   border-color: #702459;
 }
 
+.hover\:border-gray-primary:hover {
+  border-color: #1f1f1f;
+}
+
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -3984,6 +3998,10 @@ a, p, input, textarea, span, li, ul {
 
 .focus\:border-pink-900:focus {
   border-color: #702459;
+}
+
+.focus\:border-gray-primary:focus {
+  border-color: #1f1f1f;
 }
 
 .rounded-none {
@@ -15418,7 +15436,7 @@ a, p, input, textarea, span, li, ul {
 }
 
 .text-gray-primary {
-  color: #6b6b6b;
+  color: #1f1f1f;
 }
 
 .text-gray-secondary {
@@ -15802,7 +15820,7 @@ a, p, input, textarea, span, li, ul {
 }
 
 .hover\:text-gray-primary:hover {
-  color: #6b6b6b;
+  color: #1f1f1f;
 }
 
 .hover\:text-gray-secondary:hover {
@@ -16186,7 +16204,7 @@ a, p, input, textarea, span, li, ul {
 }
 
 .focus\:text-gray-primary:focus {
-  color: #6b6b6b;
+  color: #1f1f1f;
 }
 
 .focus\:text-gray-secondary:focus {
@@ -16570,7 +16588,7 @@ a, p, input, textarea, span, li, ul {
 }
 
 .active\:text-gray-primary:active {
-  color: #6b6b6b;
+  color: #1f1f1f;
 }
 
 .active\:text-gray-secondary:active {
@@ -16954,7 +16972,7 @@ a, p, input, textarea, span, li, ul {
 }
 
 .group:hover .group-hover\:text-gray-primary {
-  color: #6b6b6b;
+  color: #1f1f1f;
 }
 
 .group:hover .group-hover\:text-gray-secondary {
@@ -17884,7 +17902,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xs\:bg-gray-primary {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .xs\:bg-yellow-primary {
@@ -18264,7 +18282,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xs\:hover\:bg-gray-primary:hover {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .xs\:hover\:bg-yellow-primary:hover {
@@ -18644,7 +18662,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xs\:focus\:bg-gray-primary:focus {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .xs\:focus\:bg-yellow-primary:focus {
@@ -19024,7 +19042,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xs\:active\:bg-gray-primary:active {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .xs\:active\:bg-yellow-primary:active {
@@ -19404,7 +19422,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .group:hover .xs\:group-hover\:bg-gray-primary {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .group:hover .xs\:group-hover\:bg-yellow-primary {
@@ -19899,6 +19917,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #702459;
   }
 
+  .xs\:border-gray-primary {
+    border-color: #1f1f1f;
+  }
+
   .xs\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -20271,6 +20293,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #702459;
   }
 
+  .xs\:hover\:border-gray-primary:hover {
+    border-color: #1f1f1f;
+  }
+
   .xs\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -20641,6 +20667,10 @@ a, p, input, textarea, span, li, ul {
 
   .xs\:focus\:border-pink-900:focus {
     border-color: #702459;
+  }
+
+  .xs\:focus\:border-gray-primary:focus {
+    border-color: #1f1f1f;
   }
 
   .xs\:rounded-none {
@@ -32075,7 +32105,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xs\:text-gray-primary {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .xs\:text-gray-secondary {
@@ -32459,7 +32489,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xs\:hover\:text-gray-primary:hover {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .xs\:hover\:text-gray-secondary:hover {
@@ -32843,7 +32873,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xs\:focus\:text-gray-primary:focus {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .xs\:focus\:text-gray-secondary:focus {
@@ -33227,7 +33257,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xs\:active\:text-gray-primary:active {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .xs\:active\:text-gray-secondary:active {
@@ -33611,7 +33641,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .group:hover .xs\:group-hover\:text-gray-primary {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .group:hover .xs\:group-hover\:text-gray-secondary {
@@ -34542,7 +34572,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .sm\:bg-gray-primary {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .sm\:bg-yellow-primary {
@@ -34922,7 +34952,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .sm\:hover\:bg-gray-primary:hover {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .sm\:hover\:bg-yellow-primary:hover {
@@ -35302,7 +35332,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .sm\:focus\:bg-gray-primary:focus {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .sm\:focus\:bg-yellow-primary:focus {
@@ -35682,7 +35712,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .sm\:active\:bg-gray-primary:active {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .sm\:active\:bg-yellow-primary:active {
@@ -36062,7 +36092,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .group:hover .sm\:group-hover\:bg-gray-primary {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .group:hover .sm\:group-hover\:bg-yellow-primary {
@@ -36557,6 +36587,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #702459;
   }
 
+  .sm\:border-gray-primary {
+    border-color: #1f1f1f;
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -36929,6 +36963,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #702459;
   }
 
+  .sm\:hover\:border-gray-primary:hover {
+    border-color: #1f1f1f;
+  }
+
   .sm\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -37299,6 +37337,10 @@ a, p, input, textarea, span, li, ul {
 
   .sm\:focus\:border-pink-900:focus {
     border-color: #702459;
+  }
+
+  .sm\:focus\:border-gray-primary:focus {
+    border-color: #1f1f1f;
   }
 
   .sm\:rounded-none {
@@ -48733,7 +48775,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .sm\:text-gray-primary {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .sm\:text-gray-secondary {
@@ -49117,7 +49159,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .sm\:hover\:text-gray-primary:hover {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .sm\:hover\:text-gray-secondary:hover {
@@ -49501,7 +49543,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .sm\:focus\:text-gray-primary:focus {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .sm\:focus\:text-gray-secondary:focus {
@@ -49885,7 +49927,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .sm\:active\:text-gray-primary:active {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .sm\:active\:text-gray-secondary:active {
@@ -50269,7 +50311,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .group:hover .sm\:group-hover\:text-gray-primary {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .group:hover .sm\:group-hover\:text-gray-secondary {
@@ -51200,7 +51242,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .md\:bg-gray-primary {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .md\:bg-yellow-primary {
@@ -51580,7 +51622,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .md\:hover\:bg-gray-primary:hover {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .md\:hover\:bg-yellow-primary:hover {
@@ -51960,7 +52002,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .md\:focus\:bg-gray-primary:focus {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .md\:focus\:bg-yellow-primary:focus {
@@ -52340,7 +52382,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .md\:active\:bg-gray-primary:active {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .md\:active\:bg-yellow-primary:active {
@@ -52720,7 +52762,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .group:hover .md\:group-hover\:bg-gray-primary {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .group:hover .md\:group-hover\:bg-yellow-primary {
@@ -53215,6 +53257,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #702459;
   }
 
+  .md\:border-gray-primary {
+    border-color: #1f1f1f;
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -53587,6 +53633,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #702459;
   }
 
+  .md\:hover\:border-gray-primary:hover {
+    border-color: #1f1f1f;
+  }
+
   .md\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -53957,6 +54007,10 @@ a, p, input, textarea, span, li, ul {
 
   .md\:focus\:border-pink-900:focus {
     border-color: #702459;
+  }
+
+  .md\:focus\:border-gray-primary:focus {
+    border-color: #1f1f1f;
   }
 
   .md\:rounded-none {
@@ -65391,7 +65445,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .md\:text-gray-primary {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .md\:text-gray-secondary {
@@ -65775,7 +65829,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .md\:hover\:text-gray-primary:hover {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .md\:hover\:text-gray-secondary:hover {
@@ -66159,7 +66213,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .md\:focus\:text-gray-primary:focus {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .md\:focus\:text-gray-secondary:focus {
@@ -66543,7 +66597,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .md\:active\:text-gray-primary:active {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .md\:active\:text-gray-secondary:active {
@@ -66927,7 +66981,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .group:hover .md\:group-hover\:text-gray-primary {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .group:hover .md\:group-hover\:text-gray-secondary {
@@ -67858,7 +67912,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .lg\:bg-gray-primary {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .lg\:bg-yellow-primary {
@@ -68238,7 +68292,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .lg\:hover\:bg-gray-primary:hover {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .lg\:hover\:bg-yellow-primary:hover {
@@ -68618,7 +68672,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .lg\:focus\:bg-gray-primary:focus {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .lg\:focus\:bg-yellow-primary:focus {
@@ -68998,7 +69052,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .lg\:active\:bg-gray-primary:active {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .lg\:active\:bg-yellow-primary:active {
@@ -69378,7 +69432,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .group:hover .lg\:group-hover\:bg-gray-primary {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .group:hover .lg\:group-hover\:bg-yellow-primary {
@@ -69873,6 +69927,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #702459;
   }
 
+  .lg\:border-gray-primary {
+    border-color: #1f1f1f;
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -70245,6 +70303,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #702459;
   }
 
+  .lg\:hover\:border-gray-primary:hover {
+    border-color: #1f1f1f;
+  }
+
   .lg\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -70615,6 +70677,10 @@ a, p, input, textarea, span, li, ul {
 
   .lg\:focus\:border-pink-900:focus {
     border-color: #702459;
+  }
+
+  .lg\:focus\:border-gray-primary:focus {
+    border-color: #1f1f1f;
   }
 
   .lg\:rounded-none {
@@ -82049,7 +82115,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .lg\:text-gray-primary {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .lg\:text-gray-secondary {
@@ -82433,7 +82499,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .lg\:hover\:text-gray-primary:hover {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .lg\:hover\:text-gray-secondary:hover {
@@ -82817,7 +82883,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .lg\:focus\:text-gray-primary:focus {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .lg\:focus\:text-gray-secondary:focus {
@@ -83201,7 +83267,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .lg\:active\:text-gray-primary:active {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .lg\:active\:text-gray-secondary:active {
@@ -83585,7 +83651,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .group:hover .lg\:group-hover\:text-gray-primary {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .group:hover .lg\:group-hover\:text-gray-secondary {
@@ -84516,7 +84582,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xl\:bg-gray-primary {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .xl\:bg-yellow-primary {
@@ -84896,7 +84962,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xl\:hover\:bg-gray-primary:hover {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .xl\:hover\:bg-yellow-primary:hover {
@@ -85276,7 +85342,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xl\:focus\:bg-gray-primary:focus {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .xl\:focus\:bg-yellow-primary:focus {
@@ -85656,7 +85722,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xl\:active\:bg-gray-primary:active {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .xl\:active\:bg-yellow-primary:active {
@@ -86036,7 +86102,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .group:hover .xl\:group-hover\:bg-gray-primary {
-    background-color: #6b6b6b;
+    background-color: #1f1f1f;
   }
 
   .group:hover .xl\:group-hover\:bg-yellow-primary {
@@ -86531,6 +86597,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #702459;
   }
 
+  .xl\:border-gray-primary {
+    border-color: #1f1f1f;
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -86903,6 +86973,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #702459;
   }
 
+  .xl\:hover\:border-gray-primary:hover {
+    border-color: #1f1f1f;
+  }
+
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -87273,6 +87347,10 @@ a, p, input, textarea, span, li, ul {
 
   .xl\:focus\:border-pink-900:focus {
     border-color: #702459;
+  }
+
+  .xl\:focus\:border-gray-primary:focus {
+    border-color: #1f1f1f;
   }
 
   .xl\:rounded-none {
@@ -98707,7 +98785,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xl\:text-gray-primary {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .xl\:text-gray-secondary {
@@ -99091,7 +99169,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xl\:hover\:text-gray-primary:hover {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .xl\:hover\:text-gray-secondary:hover {
@@ -99475,7 +99553,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xl\:focus\:text-gray-primary:focus {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .xl\:focus\:text-gray-secondary:focus {
@@ -99859,7 +99937,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .xl\:active\:text-gray-primary:active {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .xl\:active\:text-gray-secondary:active {
@@ -100243,7 +100321,7 @@ a, p, input, textarea, span, li, ul {
   }
 
   .group:hover .xl\:group-hover\:text-gray-primary {
-    color: #6b6b6b;
+    color: #1f1f1f;
   }
 
   .group:hover .xl\:group-hover\:text-gray-secondary {
