@@ -3252,6 +3252,10 @@ a, p, input, textarea, span, li, ul {
   border-color: #1f1f1f;
 }
 
+.border-yellow-primary {
+  border-color: #ffd700;
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -3628,6 +3632,10 @@ a, p, input, textarea, span, li, ul {
   border-color: #1f1f1f;
 }
 
+.hover\:border-yellow-primary:hover {
+  border-color: #ffd700;
+}
+
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -4002,6 +4010,10 @@ a, p, input, textarea, span, li, ul {
 
 .focus\:border-gray-primary:focus {
   border-color: #1f1f1f;
+}
+
+.focus\:border-yellow-primary:focus {
+  border-color: #ffd700;
 }
 
 .rounded-none {
@@ -19921,6 +19933,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #1f1f1f;
   }
 
+  .xs\:border-yellow-primary {
+    border-color: #ffd700;
+  }
+
   .xs\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -20297,6 +20313,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #1f1f1f;
   }
 
+  .xs\:hover\:border-yellow-primary:hover {
+    border-color: #ffd700;
+  }
+
   .xs\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -20671,6 +20691,10 @@ a, p, input, textarea, span, li, ul {
 
   .xs\:focus\:border-gray-primary:focus {
     border-color: #1f1f1f;
+  }
+
+  .xs\:focus\:border-yellow-primary:focus {
+    border-color: #ffd700;
   }
 
   .xs\:rounded-none {
@@ -36591,6 +36615,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #1f1f1f;
   }
 
+  .sm\:border-yellow-primary {
+    border-color: #ffd700;
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -36967,6 +36995,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #1f1f1f;
   }
 
+  .sm\:hover\:border-yellow-primary:hover {
+    border-color: #ffd700;
+  }
+
   .sm\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -37341,6 +37373,10 @@ a, p, input, textarea, span, li, ul {
 
   .sm\:focus\:border-gray-primary:focus {
     border-color: #1f1f1f;
+  }
+
+  .sm\:focus\:border-yellow-primary:focus {
+    border-color: #ffd700;
   }
 
   .sm\:rounded-none {
@@ -53261,6 +53297,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #1f1f1f;
   }
 
+  .md\:border-yellow-primary {
+    border-color: #ffd700;
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -53637,6 +53677,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #1f1f1f;
   }
 
+  .md\:hover\:border-yellow-primary:hover {
+    border-color: #ffd700;
+  }
+
   .md\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -54011,6 +54055,10 @@ a, p, input, textarea, span, li, ul {
 
   .md\:focus\:border-gray-primary:focus {
     border-color: #1f1f1f;
+  }
+
+  .md\:focus\:border-yellow-primary:focus {
+    border-color: #ffd700;
   }
 
   .md\:rounded-none {
@@ -69931,6 +69979,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #1f1f1f;
   }
 
+  .lg\:border-yellow-primary {
+    border-color: #ffd700;
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -70307,6 +70359,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #1f1f1f;
   }
 
+  .lg\:hover\:border-yellow-primary:hover {
+    border-color: #ffd700;
+  }
+
   .lg\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -70681,6 +70737,10 @@ a, p, input, textarea, span, li, ul {
 
   .lg\:focus\:border-gray-primary:focus {
     border-color: #1f1f1f;
+  }
+
+  .lg\:focus\:border-yellow-primary:focus {
+    border-color: #ffd700;
   }
 
   .lg\:rounded-none {
@@ -86601,6 +86661,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #1f1f1f;
   }
 
+  .xl\:border-yellow-primary {
+    border-color: #ffd700;
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -86977,6 +87041,10 @@ a, p, input, textarea, span, li, ul {
     border-color: #1f1f1f;
   }
 
+  .xl\:hover\:border-yellow-primary:hover {
+    border-color: #ffd700;
+  }
+
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -87351,6 +87419,10 @@ a, p, input, textarea, span, li, ul {
 
   .xl\:focus\:border-gray-primary:focus {
     border-color: #1f1f1f;
+  }
+
+  .xl\:focus\:border-yellow-primary:focus {
+    border-color: #ffd700;
   }
 
   .xl\:rounded-none {

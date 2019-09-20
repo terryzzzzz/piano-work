@@ -65,6 +65,7 @@ module.exports = {
       },
       borderColor: {
         'gray-primary': '#1f1f1f',
+        'yellow-primary': '#ffd700',
       },
       colors: {
         red: {
