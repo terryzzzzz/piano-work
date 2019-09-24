@@ -1,0 +1,17 @@
+{% extends "_layouts/_base" %}
+
+{% set title = siteName %}
+{% set docTitle = 'Projects | Piano Works'%}
+{% set metaDescription = 'Template Meta Description Here' %}
+
+{% block body %}
+
+<!-- ORGANISMS : Header -->
+{% include('_partials/_organisms/_sub-header.twig') with {
+} %}
+
+<!-- SECTIONS : Breadcrumbs -->
+{% include('_partials/_organisms/_breadcrumbs.twig') with {
+} %}
+
+{% endblock %}

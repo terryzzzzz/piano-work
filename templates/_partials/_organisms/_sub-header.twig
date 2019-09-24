@@ -1,0 +1,38 @@
+{% import "_layouts/_macros" as macros %}
+
+<style media="screen">
+  .headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+  }
+  .headroom--pinned {
+  transform: translateY(0%);
+  }
+  .headroom--unpinned {
+  transform: translateY(-100%);
+  }
+</style>
+
+<header id="header" data-headroom class="fixed h-24 inset-0 w-full flex justify-center bg-white border-b border-gray-100 border-solid">
+    <div class="container h-24 flex justify-between">
+      <div class="h-full w-64 flex items-center uppercase">
+        <h2 class="text-gray-primary mb-2 font-black">SiteName</h2>
+      </div>
+      <div class=" flex items-center text-gray-primary">
+        <a href="#" class="px-10 trans trans-fast hover:text-yellow-primary {{ macros.is_active('') }}">
+          <p>HOME</p>
+        </a>
+        <a href="/projects" class="px-10 trans trans-fast hover:text-yellow-primary {{ macros.is_active('projects') }}">
+          <p>PROJECTS</p>
+        </a>
+        <a href="#" class="pl-10 trans trans-fast hover:text-yellow-primary {{ macros.is_active('blogs') }}">
+          <p>BLOGS</p>
+        </a>
+      </div>
+    </div>
+
+</header>
+
+<script type="text/javascript">
+  $("#header").headroom();
+</script>
