@@ -1,11 +1,16 @@
 <section>
   <div class="w-full bg-white flex justify-center mt-24">
     <div class="container flex justify-center items-center py-3 text-gray-primary text-xs">
-      <p>HOME</p>
+      <a href="/" class="trans trans-fast hover:text-yellow-primary"><p>HOME</p></a>
       <p class="mx-2">></p>
-      <p>PROJECTS</p>
-      <p class="mx-2">></p>
-      <p>SINGLE PROJECT</p>
+      {% for single in list %}
+        {% if not loop.last %}
+        <a href="{{ single.url }}" class="trans trans-fast hover:text-yellow-primary"><p>{{ single.title|upper }}</p></a>
+        <p class="mx-2">></p>
+        {% else %}
+        <p class="text-yellow-primary">{{ single.title|upper }}</p>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>
