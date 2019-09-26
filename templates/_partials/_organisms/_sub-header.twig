@@ -2,18 +2,22 @@
 
 <style media="screen">
   .headroom {
-  will-change: transform;
-  transition: transform 200ms linear;
+    will-change: transform;
+    transition: all 200ms linear;
   }
   .headroom--pinned {
-  transform: translateY(0%);
+    transform: translateY(0%);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
   .headroom--unpinned {
-  transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  .headroom--top {
+    box-shadow: none;
   }
 </style>
 
-<header id="header" data-headroom class="fixed h-24 inset-0 w-full flex justify-center bg-white border-b border-gray-100 border-solid">
+<header id="header" data-headroom class="fixed h-24 inset-0 w-full flex justify-center bg-white border-b border-gray-100 border-solid z-50">
     <div class="container h-24 flex justify-between">
       <div class="h-full w-64 flex items-center uppercase">
         <h2 class="text-gray-primary mb-2 font-black">SiteName</h2>
@@ -34,5 +38,12 @@
 </header>
 
 <script type="text/javascript">
-  $("#header").headroom();
+  $("#header").headroom({
+    "classes": {
+      "initial": "headroom",
+      "pinned": "headroom--pinned",
+      "unpinned": "headroom--unpinned",
+      "top": "headroom--top",
+    }
+  });
 </script>
