@@ -7,20 +7,22 @@
 {% block body %}
 
 <!-- ORGANISMS : Header -->
-{% include('_partials/_organisms/_sub-header.twig') with {
+{% include('_partials/_organisms/_sub-header') with {
 } %}
 
 <!-- SECTIONS : Breadcrumbs -->
-{% include('_partials/_organisms/_breadcrumbs.twig') with {
+{% include('_partials/_organisms/_breadcrumbs') with {
   list: [{title:'Projects', url:'/projects'}, {title:entry.title, url:'#'}],
 } %}
 
 <!-- SECTIONS : Hero -->
-{% include('singles/projects/_single/_partials/_hero.twig') with {
+{% include('singles/projects/_single/_partials/_hero') with {
 } %}
 
-<div class="h-screen w-full bg-gray-100">
+{% include('singles/projects/_single/_partials/_video') %}
 
-</div>
+<!-- SECTIONS : Hero -->
+{% include('_scripts/lightcase.twig') with {
+} %}
 
 {% endblock %}
