@@ -7,10 +7,16 @@
           <p class="mt-5">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</p>
         </div>
 
-        <div class="w-1/2">
+        <div class="w-1/2 relative">
 
           <a href="//www.youtube.com/embed/a2GujJZfXpg" data-rel="lightcase">
             <img src="https://i.ytimg.com/vi/woAHwpOLmyY/maxresdefault.jpg" alt="">
+            <div class="absolute inset-0 w-full h-full flex justify-center items-center">
+              <div class="absolute inset-0 w-full h-full bg-black opacity-50 z-0"></div>
+              <div class="h-16 w-16 bg-white z-10 ">
+                <img class="trans trans-fast rounded-full shadow-none hover:shadow-md" src="{{ siteUrl ~ 'assets/images/icons/play-button.svg'}}" alt="">
+              </div>
+            </div>
           </a>
         </div>
       </div>
