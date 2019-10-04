@@ -19,9 +19,25 @@
 {% include('singles/projects/_single/_partials/_hero') with {
 } %}
 
-{% include('singles/projects/_single/_partials/_video') %}
+<!-- SECTIONS: Video -->
+{% set mainAreaBlock = entry.projectMainArea.one() %}
+{% if mainAreaBlock.type == "newVideoProject" %}
+  {% include('singles/projects/_single/_partials/_video') with {
+    block: mainAreaBlock,
+  } %}
+{% elseif mainAreaBlock.type == "newGalleryProject" %}
+  {% include('singles/projects/_single/_partials/_gallery') with {
+    block: mainAreaBlock,
+  } %}
+{% endif %}
 
-<!-- SECTIONS : Hero -->
+<!-- ORGANISMS : Contact Form -->
+{% include('_partials/_organisms/_contact-form') %}
+
+<!-- ORGANISMS : Footer -->
+{% include('_partials/_organisms/_footer') %}
+
+<!-- SECTIONS : Lightcase -->
 {% include('_scripts/lightcase.twig') with {
 } %}
 

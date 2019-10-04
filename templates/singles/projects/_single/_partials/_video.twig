@@ -3,23 +3,34 @@
     <div class="container my-20">
       <div class="w-full flex justify-between">
         <div class="w-1/3 flex flex-col">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <p class="mt-5">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</p>
+          {# <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p class="mt-5">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</p> #}
+          {{ block.projectVideoDescription | nl2br}}
         </div>
 
         <div class="w-1/2 relative">
 
-          <a href="//www.youtube.com/embed/a2GujJZfXpg" data-rel="lightcase">
-            <img src="https://i.ytimg.com/vi/woAHwpOLmyY/maxresdefault.jpg" alt="">
+          <a href="{{ block.projectVideoUrl }}" data-rel="lightcase">
+            <img src="{{ block.projectVideoCover.one().url }}" alt="">
             <div class="absolute inset-0 w-full h-full flex justify-center items-center">
               <div class="absolute inset-0 w-full h-full bg-black opacity-50 z-0"></div>
-              <div class="h-16 w-16 bg-white z-10 ">
+              <div class="h-16 w-16 bg-white z-10 rounded-full">
                 <img class="trans trans-fast rounded-full shadow-none hover:shadow-md" src="{{ siteUrl ~ 'assets/images/icons/play-button.svg'}}" alt="">
               </div>
             </div>
           </a>
         </div>
       </div>
+
+      {# Additional Block #}
+      {% for block in entry.projectAdditionalSection.all() %}
+        {% if block.type == "newProjectAdditionalBlock" %}
+        <div class="w-full flex flex-col justify-center items-center mt-20 text-center md:text-left">
+          <h2 class="text-2xl text-gray-primary text-center">{{ block.additionalBlockTitle }}</h2>
+          <p class="mt-10">{{ block.additionalBlockContent | nl2br }}</p>
+        </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>

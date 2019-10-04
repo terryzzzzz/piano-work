@@ -1,0 +1,47 @@
+<section>
+  <div class="w-full flex justify-center">
+    <div class="container my-20 px-5 sm:px-10 lg:px-0">
+      <h2 class="text-2xl text-gray-primary text-center">{{ block.projectGalleryTitle }}</h2>
+      <div class="swiper-container w-full mt-10">
+        <div class="swiper-wrapper">
+          {% for image in block.projectGalleryImages %}
+          <div class="swiper-slide flex flex-col justify-center items-center">
+            <div class="relative w-8/12 h-5/10-screen bg-blue-100 mb-10 bg-cover bg-no-repeat bg-center trans trans-fast shadow-none hover:shadow-lg" style="background-image: url('{{ image.url }}');">
+              <a class="w-full h-full absolute inset-0" href="{{ image.url }}" data-rel="lightcase"></a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+          },
+        });
+      </script>
+
+      {# Additional Block #}
+      {% for block in entry.projectAdditionalSection.all() %}
+        {% if block.type == "newProjectAdditionalBlock" %}
+        <div class="w-full flex flex-col justify-center items-center mt-20 text-center md:text-left">
+          <h2 class="text-2xl text-gray-primary text-center">{{ block.additionalBlockTitle }}</h2>
+          <p class="mt-10">{{ block.additionalBlockContent | nl2br }}</p>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
