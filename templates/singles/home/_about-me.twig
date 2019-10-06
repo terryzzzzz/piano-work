@@ -7,7 +7,7 @@
             <div class="w-full h-full border-8 border-solid border-yellow-primary absolute z-0" style="top: -1.5rem; left: -1.5rem;">
 
             </div>
-            <div class="w-full h-0 bg-blue-800 mt-10 relative z-10 bg-top bg-cover bg-no-repeat" style="padding-top: 50%; padding-bottom: 50%; background-image: url('https://images.unsplash.com/photo-1559519530-ae79fe5bffc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');">
+            <div class="w-full h-0 bg-blue-800 mt-10 relative z-10 bg-top bg-cover bg-no-repeat" style="padding-top: 50%; padding-bottom: 50%; background-image: url('{{ entry.homeAboutMeImage.one().url }}');">
 
             </div>
           </div>
@@ -15,7 +15,7 @@
         <div class="w-full md:w-1/2 flex flex-col items-center md:items-start">
           <h2 class="text-4xl text-gray-primary">About Me</h2>
           <div class="flex md:hidden w-full relative justify-center">
-            <div class="w-40 h-40 bg-blue-800 mt-10 relative z-10 bg-top bg-cover bg-no-repeat rounded-full" style="background-image: url('https://images.unsplash.com/photo-1559519530-ae79fe5bffc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');">
+            <div class="w-40 h-40 bg-blue-800 mt-10 relative z-10 bg-top bg-cover bg-no-repeat rounded-full" style="background-image: url('{{ entry.homeAboutMeImage.one().url }}');">
 
             </div>
           </div>
@@ -32,7 +32,8 @@
             <p class="ml-5">naomi@improfessional.com.au</p>
           </div>
           <div class="w-full flex items-center mt-5">
-            <p class="text-center md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus aliquam eleifend mi in nulla. Sed augue lacus viverra vitae congue eu consequat ac. Id ornare arcu odio ut sem. Iaculis nunc sed augue lacus viverra vitae congue. In nisl nisi scelerisque eu ultrices vitae. Elementum nibh tellus molestie nunc non blandit. Cursus vitae congue mauris rhoncus aenean. Pellentesque diam volutpat commodo sed egestas egestas. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Neque gravida in fermentum et. Consequat nisl vel pretium lectus quam id. Nunc sed id semper risus in. Pretium lectus quam id leo in vitae turpis massa. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. A pellentesque sit amet porttitor.
+            <p class="text-center md:text-left">
+              {{ entry.homeAboutMeDescription|nl2br }}
             </p>
           </div>
         </div>
