@@ -1,0 +1,34 @@
+<section>
+  <div class="w-full flex justify-center bg-white">
+    <div class="container flex flex-wrap">
+      {% set projectEntryQuery = craft.entries().section('project').limit(6) %}
+      {% set entries = projectEntryQuery.all() %}
+      {% for entry in entries %}
+      <div class="w-full md:w-1/3 pl-2 pr-2 -mt-20 mb-32">
+        <div class="w-full shadow-lg">
+          <div class="w-full h-4 bg-gray-primary"></div>
+          <div class="w-full h-64 bg-center bg-cover bg-no-repeat" style="background-image: url('{{ entry.projectFeaturedImage.one().url }}')"></div>
+          <div class="w-full py-10 bg-white relative">
+            <div class="w-12 h-12 bg-white absolute top-0 left-1/2 tf_tlAll_-50 rounded-full shadow-md"></div>
+            <div class="px-8 flex flex-col">
+              <div class="pb-2 border-b border-gray-300 border-solid text-center md:text-left">
+                <h3>{{ entry.title }}</h3>
+                <p>{{ entry.projectDate|date('d /M /Y', timezone="Australia/Melbourne")}}</p>
+              </div>
+              <div class="my-2 h-24 text-center md:text-justify">
+                <p class="h-full overflow-hidden whitespace-normal">{{ entry.projectDescription }}</p>
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+          <a href="{{ entry.url }}">
+            <div class="w-full flex justify-center items-center bg-gray-primary py-3">
+              <p class="text-white">VIEW MORE</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

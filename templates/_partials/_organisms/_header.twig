@@ -1,5 +1,26 @@
 {% import "_layouts/_macros" as macros %}
-<header class="absolute inset-0 w-full flex justify-center">
+
+<style media="screen">
+  .headroom {
+    will-change: transform;
+    transition: all 100ms linear;
+  }
+  .headroom--pinned {
+    transform: translateY(0%);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background-color: #1f1f1f;
+  }
+  .headroom--unpinned {
+    transform: translateY(-100%);
+    background-color: #1f1f1f;
+  }
+  .headroom--top {
+    box-shadow: none;
+    background-color: transparent;
+  }
+</style>
+
+<header id="header" class="fixed h-24 inset-0 w-full flex justify-center z-50">
   <div class="container h-24 flex justify-between">
     <div class="h-full w-64 flex items-center uppercase">
       <h2 class="text-white mb-2 font-black">Site&nbsp;</h2><h2 class="text-yellow-primary mb-2 font-black">N</h2><h2 class="text-white mb-2 font-black">ame</h2>
@@ -17,3 +38,13 @@
     </div>
   </div>
 </header>
+<script type="text/javascript">
+  $("#header").headroom({
+    "classes": {
+      "initial": "headroom",
+      "pinned": "headroom--pinned",
+      "unpinned": "headroom--unpinned",
+      "top": "headroom--top",
+    }
+  });
+</script>

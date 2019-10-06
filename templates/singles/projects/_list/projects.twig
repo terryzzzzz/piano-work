@@ -7,12 +7,17 @@
 {% block body %}
 
 <!-- ORGANISMS : Header -->
-{% include('_partials/_organisms/_sub-header.twig') with {
+{% include('_partials/_organisms/_header.twig') with {
 } %}
 
-<!-- SECTIONS : Breadcrumbs -->
-{% include('_partials/_organisms/_breadcrumbs.twig') with {
-  list: [{title:'Projects', url:'/projects'}, {title:'Single Projects', url:'#'}],
-} %}
+{% include('singles/projects/_list/_partials/_hero') %}
+
+{% include('singles/projects/_list/_partials/_list') %}
+
+<!-- ORGANISMS : Contact Form -->
+{% include('_partials/_organisms/_contact-form') %}
+
+<!-- ORGANISMS : Footer -->
+{% include('_partials/_organisms/_footer') %}
 
 {% endblock %}
