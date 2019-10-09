@@ -22,8 +22,9 @@
 
 <header id="header" class="fixed h-24 inset-0 w-full flex justify-center z-50">
   <div class="container h-24 flex justify-between">
-    <div class="h-full w-64 flex items-center uppercase">
-      <h2 class="text-white mb-2 font-black">Site&nbsp;</h2><h2 class="text-yellow-primary mb-2 font-black">N</h2><h2 class="text-white mb-2 font-black">ame</h2>
+    <div class="h-full w-64 flex items-center uppercase py-5">
+      {# <h2 class="text-white mb-2 font-black">Site&nbsp;</h2><h2 class="text-yellow-primary mb-2 font-black">N</h2><h2 class="text-white mb-2 font-black">ame</h2> #}
+      <img class="h-full" src="{{ globals.globalSiteLogo.one().url }}" alt="">
     </div>
     <div class=" flex items-center text-white">
       <a href="/" class="px-10 trans trans-fast hover:text-yellow-primary {{ macros.is_active('') }}">

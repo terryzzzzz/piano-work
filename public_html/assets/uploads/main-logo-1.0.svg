@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 371.85 156.68">
+  <defs>
+    <style>.cls-1,.cls-2{fill:#fff;}.cls-2{font-size:79.81px;font-family:Phosphate-Inline, Phosphate;}.cls-3{letter-spacing:-0.05em;}.cls-4{letter-spacing:0em;}</style>
+  </defs>
+  <title>main-logo-1.0</title>
+  <path class="cls-1" d="M218.19,329.07H185.1v61.79s4.43.7,4.43,3.26v58.76h28.65a5,5,0,0,0,5-5V334.07A5,5,0,0,0,218.19,329.07Z" transform="translate(-100.72 -318.07)"></path>
+  <path class="cls-1" d="M144.28,329.07v61.79s4.43.7,4.43,3.26v58.76h26.48V394.13c0-2.56,4.43-3.26,4.43-3.26V329.07Z" transform="translate(-100.72 -318.07)"></path>
+  <path class="cls-1" d="M138.8,390.86V329.07H105.72a5,5,0,0,0-5,5V447.88a5,5,0,0,0,5,5h28.65V394.13C134.37,391.56,138.8,390.86,138.8,390.86Z" transform="translate(-100.72 -318.07)"></path>
+  <text class="cls-2" transform="translate(130.9 66.52)">N<tspan class="cls-3" x="50.92" y="0">A</tspan><tspan class="cls-4" x="96.89" y="0">OMI</tspan></text>
+  <text class="cls-2" transform="translate(130.9 134.81)">Piano</text>
+</svg>
